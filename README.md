@@ -35,7 +35,7 @@ aws --version
 ```
 ## II- Configure AWS CLI
 ### Creating a key pair
-#### Access keys consist of an access key ID and secret access key, which are used to sign programmatic requests that you make to AWS. If you don't have access keys, you can create them from the AWS Management Console. As a best practice, do not use the AWS account root user access keys for any task where it's not required. Instead, create a new administrator IAM user with access keys for yourself.
+Access keys consist of an access key ID and secret access key, which are used to sign programmatic requests that you make to AWS. If you don't have access keys, you can create them from the AWS Management Console. As a best practice, do not use the AWS account root user access keys for any task where it's not required. Instead, create a new administrator IAM user with access keys for yourself.
 
 The only time that you can view or download the secret access key is when you create the keys. You cannot recover them later. However, you can create new access keys at any time. You must also have permissions to perform the required IAM actions. For more information, see Permissions required to access IAM resources in the IAM User Guide.
 
@@ -60,5 +60,16 @@ To download the key pair, choose Download .csv file. Store the keys in a secure 
 Keep the keys confidential in order to protect your AWS account and never email them. Do not share them outside your organization, even if an inquiry appears to come from AWS or Amazon.com. No one who legitimately represents Amazon will ever ask you for your secret key.
 
 After you download the .csv file, choose Close. When you create an access key, the key pair is active by default, and you can use the pair right away.
+
+### Connect my PC to AWS through AWS CLI
+```
+aws configure
+```
+```
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE ( put your here)
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY  ( put your here)
+Default region name [None]: us-east-2
+Default output format [None]:
+```
 
 
